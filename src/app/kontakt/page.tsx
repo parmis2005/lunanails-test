@@ -13,7 +13,7 @@ import {
 export const metadata: Metadata = {
   title: "Kontakt",
   description:
-    "Adresse, Öffnungszeiten und Kontaktmöglichkeiten von Happy Nails Koblenz.",
+    "Fiktive Adresse, Öffnungszeiten und Kontaktmöglichkeiten von Luna Nails Atelier.",
 };
 
 export default function KontaktPage() {
@@ -91,7 +91,7 @@ export default function KontaktPage() {
             <div className="rounded-sm bg-white p-6 ring-1 ring-rose-gold/18 sm:p-8">
               <h2 className="font-serif text-2xl font-semibold text-charcoal">Anfahrt</h2>
               <p className="mt-3 text-sm leading-relaxed text-charcoal-light">
-                Wir befinden uns in der Moselweißer Straße in Koblenz – sowohl mit dem
+                Wir befinden uns in der {siteConfig.address.street} in {siteConfig.city} – sowohl mit dem
                 Auto als auch mit öffentlichen Verkehrsmitteln gut zu erreichen. Nutze
                 den Routenplaner-Button für die schnellste Verbindung von deinem
                 Standort aus.

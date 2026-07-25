@@ -111,14 +111,14 @@ export default function HomePage() {
           <div className="relative order-2 grid grid-cols-2 gap-4 lg:order-1">
             <GalleryTile icon={iconMap.heart} label="Sorgfältig" variant={2} />
             <PhotoTile
-              src="/images/gallery/french-nails-weiss.jpg"
-              alt="Klassische French Nails mit weißer Spitze"
+              src="/images/gallery/fake-french-manicure.jpg"
+              alt="Fiktive klassische French Nails mit weißer Spitze"
               label="French"
               className="mt-8"
             />
             <PhotoTile
-              src="/images/gallery/nailart-glitzer-nude.jpg"
-              alt="Nude Nageldesign mit Glitzer-Akzent"
+              src="/images/gallery/fake-glitter-nailart.jpg"
+              alt="Fiktives Nude-Nageldesign mit Glitzer-Akzent"
               label="Nailart"
             />
             <GalleryTile icon={iconMap.calendar} label="Flexibel" variant={3} className="mt-8" />
@@ -127,11 +127,11 @@ export default function HomePage() {
           <div className="order-1 lg:order-2">
             <SectionHeading
               kicker="Über uns"
-              title="Dein Nagelstudio in Koblenz"
+              title={`Dein Nagelstudio in ${siteConfig.city}`}
               align="left"
             />
             <p className="mt-8 text-base leading-relaxed text-charcoal-light">
-              Bei {siteConfig.shortName} in der Moselweißer Straße dreht sich alles um
+              Bei {siteConfig.shortName} in der {siteConfig.address.street} dreht sich alles um
               gepflegte Hände und Füße. Ob klassische Maniküre, langanhaltende
               Gel-Modellage oder feine Nailart-Details – wir nehmen uns Zeit für dich und
               setzen deine Wünsche sorgfältig um.

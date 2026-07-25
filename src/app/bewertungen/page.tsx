@@ -8,7 +8,7 @@ import { googleMapsSearchUrl, siteConfig, testimonials } from "@/lib/site-data";
 
 export const metadata: Metadata = {
   title: "Bewertungen",
-  description: "Was Kundinnen über Happy Nails Koblenz sagen.",
+  description: "Fiktive Beispielbewertungen fuer ein Demo-Nagelstudio.",
 };
 
 export default function BewertungenPage() {

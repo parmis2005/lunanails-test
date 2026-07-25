@@ -9,7 +9,7 @@ import { serviceCategories, servicePricingNote } from "@/lib/site-data";
 export const metadata: Metadata = {
   title: "Leistungen & Preise",
   description:
-    "Alle Leistungen von Happy Nails Koblenz im Überblick: Maniküre, Pediküre, Gel & Modellage sowie Nailart.",
+    "Alle fiktiven Leistungen von Luna Nails Atelier im Überblick: Maniküre, Pediküre, Gel & Modellage sowie Nailart.",
 };
 
 export default function LeistungenPage() {

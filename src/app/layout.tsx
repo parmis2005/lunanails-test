@@ -25,11 +25,11 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   keywords: [
-    "Nagelstudio Koblenz",
-    "Maniküre Koblenz",
-    "Pediküre Koblenz",
-    "Gel Nägel Koblenz",
-    "Nailart Koblenz",
+    "Nagelstudio Beispielstadt",
+    "Maniküre Beispielstadt",
+    "Pediküre Beispielstadt",
+    "Gel Nägel Beispielstadt",
+    "Nailart Beispielstadt",
     siteConfig.name,
   ],
   openGraph: {

@@ -1,33 +1,26 @@
-// Zentrale Inhalts-Datei. Hier an EINER Stelle alle echten Geschäftsdaten pflegen.
-// Felder mit "TODO" sind Platzhalter und sollten vor dem Livegang geprüft/ersetzt werden.
+// Zentrale Inhalts-Datei mit bewusst fiktiven Demo-Daten.
+// Diese Daten gehoeren zu keinem echten Unternehmen.
 
 export const siteConfig = {
-  name: "Happy Nails Koblenz",
-  shortName: "Happy Nails",
-  city: "Koblenz",
+  name: "Luna Nails Atelier",
+  shortName: "Luna Nails",
+  city: "Beispielstadt",
   tagline:
-    "Schöne Fingernägel – eine Selbstverständlichkeit für jede gepflegte und auf ihr Aussehen bedachte Frau.",
+    "Fiktives Nagelstudio-Konzept für gepflegte Hände, dezente Nailart und entspannte Beauty-Momente.",
   description:
-    "Nagelstudio in Koblenz für Maniküre, Pediküre, Gel-Modellage und Nailart. Kurzfristige Termine, saubere Arbeit, faire Preise.",
+    "Fiktives Demo-Nagelstudio in Beispielstadt für Maniküre, Pediküre, Gel-Modellage und Nailart.",
 
-  // TODO: Telefonnummer verifizieren – aus Verzeichniseintrag ohne Formatierung übernommen
-  // und als deutsche Rufnummer (Vorwahl Koblenz 0261) rekonstruiert.
   phone: {
-    display: "0261 95232366",
-    href: "tel:+4926195232366",
+    display: "01234 567890",
+    href: "tel:+491234567890",
   },
 
-  // TODO: durch echte geschäftliche E-Mail-Adresse ersetzen (Quelle lieferte nur einen
-  // generischen Platzhalter, keine echte Studio-Adresse).
-  email: "info@happynails-koblenz.de",
+  email: "kontakt@luna-nails.example",
 
-  // WICHTIG: Die Quellseite nannte "Moselweißer Str. 117-119", das reale Google-Maps-Profil
-  // "Happy Nails" in Koblenz löst jedoch auf Hausnummer 40 auf (4,2 ★, 152 Bewertungen).
-  // Bitte unbedingt die tatsächliche Adresse gegenprüfen, bevor die Seite live geht.
   address: {
-    street: "Moselweißer Str. 40",
-    zip: "56073",
-    city: "Koblenz",
+    street: "Musterstraße 12",
+    zip: "12345",
+    city: "Beispielstadt",
     country: "Deutschland",
   },
 
@@ -41,17 +34,16 @@ export const siteConfig = {
     { day: "Sonntag", time: "Geschlossen", closed: true },
   ],
 
-  // TODO: Bewertungsstand regelmäßig mit dem echten Google-Profil abgleichen.
   rating: {
-    value: 4.2,
+    value: 4.8,
     outOf: 5,
-    count: 152,
-    source: "Google Bewertungen",
+    count: 128,
+    source: "Demo-Bewertungen",
   },
 
   social: {
-    instagram: "https://www.instagram.com/happynailskoblenz/?hl=de",
-    facebook: "https://www.facebook.com/HappyNailsKoblenz/?locale=de_DE",
+    instagram: "#",
+    facebook: "#",
   },
 } as const;
 
@@ -82,8 +74,7 @@ export const navLinks: NavLink[] = [
 export type Service = {
   name: string;
   price: string;
-  // "verified" = Preis stammt 1:1 aus der Quelle. Alle anderen sind Richtwerte (siehe Hinweis
-  // auf der Leistungen-Seite) und sollten vom Studio final geprüft werden.
+  // Fiktive Demo-Preise.
   verified?: boolean;
 };
 
@@ -147,9 +138,7 @@ export const serviceCategories: ServiceCategory[] = [
 export const servicePricingNote =
   "Alle Preise sind Richtwerte und können je nach Aufwand, Nagellänge und gewünschtem Design variieren. Sprich uns gerne für ein individuelles Angebot an.";
 
-// Beispieltexte, keine echten, verifizierten Kundenbewertungen (Quelle lieferte keine
-// eindeutig zuordenbaren Bewertungen). Bitte vor Veröffentlichung durch echte,
-// freigegebene Kundenstimmen ersetzen – siehe Hinweis in README.
+// Fiktive Beispielbewertungen fuer die Demo-Webseite.
 export type Testimonial = {
   quote: string;
   author: string;
@@ -164,7 +153,7 @@ export const testimonials: Testimonial[] = [
   {
     quote:
       "Termin kurzfristig bekommen, top Beratung und das Ergebnis war genau so, wie ich es mir gewünscht habe.",
-    author: "Kundin, Koblenz",
+    author: "Demo-Kundin",
   },
   {
     quote:
@@ -181,7 +170,7 @@ export const highlights = [
   },
   {
     icon: "map-pin",
-    title: "Zentral in Koblenz",
+    title: "Zentral gelegen",
     text: `${siteConfig.address.street}, gut erreichbar.`,
   },
   {

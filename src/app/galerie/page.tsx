@@ -9,23 +9,23 @@ import { siteConfig } from "@/lib/site-data";
 
 export const metadata: Metadata = {
   title: "Galerie",
-  description: "Einblicke in die Arbeiten von Happy Nails Koblenz.",
+  description: "Fiktive Beispielbilder fuer ein Demo-Nagelstudio.",
 };
 
 const photoItems = [
   {
-    src: "/images/gallery/gel-modellage-rot.jpg",
-    alt: "Glänzende rote Gel-Modellage in Coffin-Form",
+    src: "/images/gallery/fake-nude-manicure.jpg",
+    alt: "Fiktive Nude-Maniküre an einem Salon-Tisch",
     label: "Gel-Modellage",
   },
   {
-    src: "/images/gallery/french-nails-weiss.jpg",
-    alt: "Klassische French Nails mit weißer Spitze",
+    src: "/images/gallery/fake-french-manicure.jpg",
+    alt: "Fiktive klassische French Nails mit weißer Spitze",
     label: "French Nails",
   },
   {
-    src: "/images/gallery/nailart-glitzer-nude.jpg",
-    alt: "Nude Nageldesign mit Glitzer-Akzent",
+    src: "/images/gallery/fake-glitter-nailart.jpg",
+    alt: "Fiktives Nude-Nageldesign mit Glitzer-Akzent",
     label: "Nailart mit Glitzer",
   },
 ] as const;

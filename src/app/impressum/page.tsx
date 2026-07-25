@@ -21,7 +21,7 @@ export default function ImpressumPage() {
               </h2>
               {/*
                 TODO (Inhaber:in): Vollständigen rechtlichen Namen/Rechtsform eintragen,
-                z. B. "Vorname Nachname, Inhaber:in Happy Nails Koblenz" oder Firmenname
+                z. B. "Vorname Nachname, Inhaber:in Luna Nails Atelier" oder Firmenname
                 laut Gewerbeanmeldung/Handelsregister.
               */}
               <p className="mt-3">
