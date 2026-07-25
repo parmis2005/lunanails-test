@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { ArrowRight, CalendarCheck, MapPin, Phone, Sparkles } from "lucide-react";
 import Container from "@/components/Container";
 import GalleryTile from "@/components/GalleryTile";
@@ -22,22 +21,13 @@ export default function HomePage() {
     <>
       {/* Hero */}
       <section className="relative flex min-h-[680px] items-center justify-center overflow-hidden bg-charcoal py-20 text-white">
-        <Image
-          src="/images/gallery/hero-manicure-sharp.jpg"
-          alt="Professionelle Maniküre im Nagelstudio"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-center"
-        />
         <video
-          className="absolute inset-0 h-full w-full object-cover object-center motion-reduce:hidden"
+          className="absolute inset-0 h-full w-full object-cover object-center"
           autoPlay
           muted
           loop
           playsInline
-          preload="metadata"
-          poster="/images/gallery/hero-manicure-sharp.jpg"
+          preload="auto"
           aria-hidden="true"
         >
           <source src="/videos/hero-manicure-background.mp4" type="video/mp4" />

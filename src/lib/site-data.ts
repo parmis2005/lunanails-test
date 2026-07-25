@@ -50,9 +50,8 @@ export const siteConfig = {
   },
 
   social: {
-    // TODO: echte Profil-Links eintragen
-    instagram: "#",
-    facebook: "#",
+    instagram: "https://www.instagram.com/happynailskoblenz/?hl=de",
+    facebook: "https://www.facebook.com/HappyNailsKoblenz/?locale=de_DE",
   },
 } as const;
 
