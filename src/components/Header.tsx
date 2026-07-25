@@ -19,13 +19,13 @@ export default function Header() {
   }, [open]);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-rose-100 bg-cream-50/90 backdrop-blur supports-[backdrop-filter]:bg-cream-50/70">
+    <header className="sticky top-0 z-50 border-b border-black/5 bg-white/95 shadow-sm backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:h-20 lg:px-8">
         <Link href="/" className="flex flex-col leading-tight">
-          <span className="font-serif text-xl font-semibold tracking-tight text-stone-900 lg:text-2xl">
+          <span className="font-serif text-xl font-semibold tracking-wide text-charcoal lg:text-2xl">
             {siteConfig.shortName}
           </span>
-          <span className="text-[11px] font-medium uppercase tracking-[0.2em] text-rose-500">
+          <span className="mt-0.5 text-[11px] font-bold uppercase tracking-[0.25em] text-rose-gold">
             {siteConfig.city}
           </span>
         </Link>
@@ -38,8 +38,8 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-sm font-medium transition-colors hover:text-rose-600 ${
-                  active ? "text-rose-600" : "text-stone-700"
+                className={`text-xs font-bold uppercase tracking-[0.16em] transition-colors hover:text-rose-gold-dark ${
+                  active ? "text-rose-gold-dark" : "text-charcoal-light"
                 }`}
               >
                 {link.label}
@@ -51,14 +51,14 @@ export default function Header() {
         <div className="hidden items-center gap-4 lg:flex">
           <a
             href={siteConfig.phone.href}
-            className="flex items-center gap-2 text-sm font-medium text-stone-700 hover:text-rose-600"
+            className="flex items-center gap-2 text-sm font-medium text-charcoal-light hover:text-rose-gold-dark"
           >
             <Phone className="h-4 w-4" aria-hidden="true" />
             {siteConfig.phone.display}
           </a>
           <Link
             href="/kontakt"
-            className="rounded-full bg-rose-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm shadow-rose-600/20 transition-colors hover:bg-rose-700"
+            className="btn-primary px-5 py-2.5 text-xs"
           >
             Termin anfragen
           </Link>
@@ -67,7 +67,7 @@ export default function Header() {
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
-          className="inline-flex items-center justify-center rounded-md p-2 text-stone-700 lg:hidden"
+          className="inline-flex items-center justify-center rounded-sm p-2 text-charcoal lg:hidden"
           aria-label={open ? "Menü schließen" : "Menü öffnen"}
           aria-expanded={open}
           aria-controls="mobile-menu"
@@ -77,7 +77,7 @@ export default function Header() {
       </div>
 
       {open && (
-        <div id="mobile-menu" className="border-t border-rose-100 bg-cream-50 lg:hidden">
+        <div id="mobile-menu" className="border-t border-black/5 bg-white shadow-xl lg:hidden">
           <nav className="flex flex-col px-4 py-2">
             {navLinks.map((link) => {
               const active =
@@ -87,8 +87,8 @@ export default function Header() {
                   key={link.href}
                   href={link.href}
                   onClick={closeMenu}
-                  className={`border-b border-rose-100/80 py-3 text-base font-medium last:border-none ${
-                    active ? "text-rose-600" : "text-stone-800"
+                  className={`border-b border-black/5 py-3 text-xs font-bold uppercase tracking-[0.16em] last:border-none ${
+                    active ? "text-rose-gold-dark" : "text-charcoal-light"
                   }`}
                 >
                   {link.label}
@@ -98,7 +98,7 @@ export default function Header() {
             <a
               href={siteConfig.phone.href}
               onClick={closeMenu}
-              className="flex items-center gap-2 py-3 text-base font-medium text-stone-800"
+              className="flex items-center gap-2 py-3 text-sm font-medium text-charcoal-light"
             >
               <Phone className="h-4 w-4" aria-hidden="true" />
               {siteConfig.phone.display}
@@ -106,7 +106,7 @@ export default function Header() {
             <Link
               href="/kontakt"
               onClick={closeMenu}
-              className="mb-4 mt-2 rounded-full bg-rose-600 px-5 py-3 text-center text-sm font-semibold text-white"
+              className="btn-primary mb-4 mt-2 px-5 py-3 text-center text-xs"
             >
               Termin anfragen
             </Link>

@@ -12,11 +12,11 @@ export default function ImpressumPage() {
     <>
       <PageHero kicker="Rechtliches" title="Impressum" />
 
-      <section className="py-16 sm:py-20">
+      <section className="bg-cream py-16 sm:py-20">
         <Container className="mx-auto max-w-3xl">
-          <div className="space-y-10 text-sm leading-relaxed text-stone-700">
+          <div className="space-y-10 rounded-sm bg-white p-6 text-sm leading-relaxed text-charcoal-light ring-1 ring-rose-gold/18 sm:p-10">
             <div>
-              <h2 className="font-serif text-xl font-semibold text-stone-900">
+              <h2 className="font-serif text-2xl font-semibold text-charcoal">
                 Angaben gemäß § 5 TMG
               </h2>
               {/*
@@ -36,7 +36,7 @@ export default function ImpressumPage() {
             </div>
 
             <div>
-              <h2 className="font-serif text-xl font-semibold text-stone-900">Kontakt</h2>
+              <h2 className="font-serif text-2xl font-semibold text-charcoal">Kontakt</h2>
               <p className="mt-3">
                 Telefon: {siteConfig.phone.display}
                 <br />
@@ -45,7 +45,7 @@ export default function ImpressumPage() {
             </div>
 
             <div>
-              <h2 className="font-serif text-xl font-semibold text-stone-900">
+              <h2 className="font-serif text-2xl font-semibold text-charcoal">
                 Umsatzsteuer-ID
               </h2>
               {/* TODO: Falls vorhanden, USt-IdNr. gemäß § 27a UStG eintragen. */}
@@ -56,7 +56,7 @@ export default function ImpressumPage() {
             </div>
 
             <div>
-              <h2 className="font-serif text-xl font-semibold text-stone-900">
+              <h2 className="font-serif text-2xl font-semibold text-charcoal">
                 Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV
               </h2>
               {/* TODO: Namen der inhaltlich verantwortlichen Person eintragen. */}
@@ -68,7 +68,7 @@ export default function ImpressumPage() {
             </div>
 
             <div>
-              <h2 className="font-serif text-xl font-semibold text-stone-900">
+              <h2 className="font-serif text-2xl font-semibold text-charcoal">
                 EU-Streitschlichtung
               </h2>
               <p className="mt-3">
@@ -78,7 +78,7 @@ export default function ImpressumPage() {
                   href="https://ec.europa.eu/consumers/odr/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-medium text-rose-600 hover:text-rose-700"
+                  className="font-medium text-rose-gold-dark hover:text-charcoal"
                 >
                   https://ec.europa.eu/consumers/odr/
                 </a>
@@ -89,7 +89,7 @@ export default function ImpressumPage() {
             </div>
 
             <div>
-              <h2 className="font-serif text-xl font-semibold text-stone-900">
+              <h2 className="font-serif text-2xl font-semibold text-charcoal">
                 Haftung für Inhalte
               </h2>
               <p className="mt-3">
@@ -103,7 +103,7 @@ export default function ImpressumPage() {
             </div>
 
             <div>
-              <h2 className="font-serif text-xl font-semibold text-stone-900">
+              <h2 className="font-serif text-2xl font-semibold text-charcoal">
                 Haftung für Links
               </h2>
               <p className="mt-3">
@@ -116,7 +116,7 @@ export default function ImpressumPage() {
             </div>
 
             <div>
-              <h2 className="font-serif text-xl font-semibold text-stone-900">Urheberrecht</h2>
+              <h2 className="font-serif text-2xl font-semibold text-charcoal">Urheberrecht</h2>
               <p className="mt-3">
                 Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen
                 Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung,

@@ -12,11 +12,11 @@ export default function DatenschutzPage() {
     <>
       <PageHero kicker="Rechtliches" title="Datenschutzerklärung" />
 
-      <section className="py-16 sm:py-20">
+      <section className="bg-cream py-16 sm:py-20">
         <Container className="mx-auto max-w-3xl">
-          <div className="space-y-10 text-sm leading-relaxed text-stone-700">
+          <div className="space-y-10 rounded-sm bg-white p-6 text-sm leading-relaxed text-charcoal-light ring-1 ring-rose-gold/18 sm:p-10">
             <div>
-              <h2 className="font-serif text-xl font-semibold text-stone-900">
+              <h2 className="font-serif text-2xl font-semibold text-charcoal">
                 Verantwortlicher
               </h2>
               <p className="mt-3">
@@ -30,7 +30,7 @@ export default function DatenschutzPage() {
             </div>
 
             <div>
-              <h2 className="font-serif text-xl font-semibold text-stone-900">Hosting</h2>
+              <h2 className="font-serif text-2xl font-semibold text-charcoal">Hosting</h2>
               {/* TODO: tatsächlichen Hosting-Anbieter eintragen, sobald die Seite live geht. */}
               <p className="mt-3">
                 Diese Website wird bei einem externen Dienstleister gehostet
@@ -42,7 +42,7 @@ export default function DatenschutzPage() {
             </div>
 
             <div>
-              <h2 className="font-serif text-xl font-semibold text-stone-900">
+              <h2 className="font-serif text-2xl font-semibold text-charcoal">
                 Allgemeine Hinweise
               </h2>
               <p className="mt-3">
@@ -56,7 +56,7 @@ export default function DatenschutzPage() {
             </div>
 
             <div>
-              <h2 className="font-serif text-xl font-semibold text-stone-900">
+              <h2 className="font-serif text-2xl font-semibold text-charcoal">
                 Kontaktaufnahme
               </h2>
               <p className="mt-3">
@@ -71,7 +71,7 @@ export default function DatenschutzPage() {
             </div>
 
             <div>
-              <h2 className="font-serif text-xl font-semibold text-stone-900">
+              <h2 className="font-serif text-2xl font-semibold text-charcoal">
                 Google Maps
               </h2>
               <p className="mt-3">
@@ -87,7 +87,7 @@ export default function DatenschutzPage() {
                   href="https://policies.google.com/privacy"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-medium text-rose-600 hover:text-rose-700"
+                  className="font-medium text-rose-gold-dark hover:text-charcoal"
                 >
                   Datenschutzerklärung von Google
                 </a>
@@ -96,7 +96,7 @@ export default function DatenschutzPage() {
             </div>
 
             <div>
-              <h2 className="font-serif text-xl font-semibold text-stone-900">Cookies</h2>
+              <h2 className="font-serif text-2xl font-semibold text-charcoal">Cookies</h2>
               <p className="mt-3">
                 Diese Website verwendet keine Cookies zu Analyse- oder
                 Marketingzwecken. Es werden lediglich technisch notwendige Funktionen
@@ -106,7 +106,7 @@ export default function DatenschutzPage() {
             </div>
 
             <div>
-              <h2 className="font-serif text-xl font-semibold text-stone-900">
+              <h2 className="font-serif text-2xl font-semibold text-charcoal">
                 Ihre Rechte
               </h2>
               <p className="mt-3">

@@ -14,15 +14,19 @@ export default function SectionHeading({
   return (
     <div className={`flex flex-col ${alignment}`}>
       {kicker && (
-        <span className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-rose-500">
+        <span className="mb-4 text-xs font-bold uppercase tracking-[0.28em] text-rose-gold">
           {kicker}
         </span>
       )}
-      <h2 className="font-serif text-3xl font-semibold text-stone-900 sm:text-4xl">
+      <h2 className="font-serif text-4xl font-light leading-tight text-charcoal sm:text-5xl">
         {title}
       </h2>
+      <div
+        className={`section-divider mt-5 ${align === "center" ? "mx-auto" : ""}`}
+        aria-hidden="true"
+      />
       {subtitle && (
-        <p className="mt-4 max-w-2xl text-base leading-relaxed text-stone-600">
+        <p className="mt-6 max-w-2xl text-sm leading-relaxed text-charcoal-light">
           {subtitle}
         </p>
       )}

@@ -47,7 +47,7 @@ export default function GaleriePage() {
         subtitle="Ein paar echte Ergebnisse aus unserem Studio – weitere Fotos folgen laufend."
       />
 
-      <section className="py-16 sm:py-20">
+      <section className="bg-cream py-16 sm:py-20">
         <Container>
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
             {photoItems.map((item, i) => (
@@ -69,17 +69,17 @@ export default function GaleriePage() {
             ))}
           </div>
 
-          <div className="mx-auto mt-14 flex max-w-xl flex-col items-center gap-4 rounded-2xl border border-rose-100 bg-white px-6 py-8 text-center">
-            <div className="flex h-11 w-11 items-center justify-center rounded-full bg-rose-100 text-rose-600">
+          <div className="mx-auto mt-14 flex max-w-xl flex-col items-center gap-5 rounded-sm bg-white px-6 py-8 text-center ring-1 ring-rose-gold/18">
+            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-champagne text-rose-gold-dark">
               <InstagramIcon className="h-5 w-5" />
             </div>
-            <p className="text-sm leading-relaxed text-stone-600">
+            <p className="text-sm leading-relaxed text-charcoal-light">
               Für aktuelle Nail-Looks aus unserem Studio folge uns gerne auf Instagram –
               dort teilen wir regelmäßig neue Designs.
             </p>
             <a
               href={siteConfig.social.instagram}
-              className="text-sm font-semibold text-rose-600 hover:text-rose-700"
+              className="border-b border-rose-gold/40 pb-1 text-xs font-bold uppercase tracking-[0.16em] text-rose-gold-dark hover:text-charcoal"
             >
               Zu unserem Instagram-Profil
             </a>

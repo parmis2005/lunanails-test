@@ -10,18 +10,23 @@ export default function PageHero({
   subtitle?: string;
 }) {
   return (
-    <section className="border-b border-rose-100 bg-linear-to-b from-rose-50 to-cream-50 py-14 sm:py-20">
-      <Container className="text-center">
+    <section className="relative overflow-hidden bg-charcoal py-16 text-white sm:py-24">
+      <div
+        className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(201,168,130,0.22),transparent_34%),linear-gradient(135deg,rgba(44,44,44,0.94),rgba(44,44,44,0.78))]"
+        aria-hidden="true"
+      />
+      <Container className="relative text-center">
         {kicker && (
-          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-rose-500">
+          <span className="text-xs font-bold uppercase tracking-[0.32em] text-rose-gold">
             {kicker}
           </span>
         )}
-        <h1 className="mt-3 font-serif text-3xl font-semibold text-stone-900 sm:text-5xl">
+        <h1 className="mx-auto mt-4 max-w-3xl font-serif text-4xl font-light leading-tight text-white sm:text-6xl">
           {title}
         </h1>
+        <div className="section-divider mx-auto mt-6" aria-hidden="true" />
         {subtitle && (
-          <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-stone-600">
+          <p className="mx-auto mt-6 max-w-2xl text-sm leading-relaxed text-white/72 sm:text-base">
             {subtitle}
           </p>
         )}

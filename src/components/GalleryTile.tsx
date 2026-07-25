@@ -1,10 +1,10 @@
 import { type LucideIcon } from "lucide-react";
 
 const gradients = [
-  "from-rose-200 via-rose-100 to-cream-100",
-  "from-cream-200 via-rose-100 to-rose-200",
-  "from-stone-200 via-cream-100 to-rose-100",
-  "from-rose-300 via-rose-100 to-cream-50",
+  "from-champagne via-cream to-white",
+  "from-white via-champagne to-cream",
+  "from-sage/20 via-cream to-champagne",
+  "from-rose-gold/30 via-champagne to-white",
 ];
 
 export default function GalleryTile({
@@ -22,15 +22,16 @@ export default function GalleryTile({
 
   return (
     <div
-      className={`group relative flex aspect-square flex-col items-center justify-center gap-3 overflow-hidden rounded-2xl bg-linear-to-br ${gradient} p-6 text-center shadow-sm ring-1 ring-rose-900/5 ${className}`}
+      className={`group relative flex aspect-square flex-col items-center justify-center gap-4 overflow-hidden rounded-sm bg-linear-to-br ${gradient} p-6 text-center ring-1 ring-rose-gold/18 ${className}`}
     >
-      <div className="absolute -right-6 -top-6 h-24 w-24 rounded-full bg-white/30 blur-2xl" />
-      <div className="absolute -bottom-8 -left-8 h-28 w-28 rounded-full bg-white/20 blur-2xl" />
+      <div className="absolute inset-3 border border-white/60" aria-hidden="true" />
       <Icon
-        className="relative h-9 w-9 text-rose-600/70 transition-transform duration-300 group-hover:scale-110"
+        className="relative h-9 w-9 text-rose-gold-dark transition-transform duration-300 group-hover:scale-110"
         strokeWidth={1.5}
       />
-      <span className="relative text-sm font-medium text-stone-700">{label}</span>
+      <span className="relative text-xs font-bold uppercase tracking-[0.18em] text-charcoal-light">
+        {label}
+      </span>
     </div>
   );
 }

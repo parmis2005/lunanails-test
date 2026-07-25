@@ -37,7 +37,7 @@ export default function ContactForm() {
     <div>
       <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <div className="sm:col-span-1">
-          <label htmlFor="name" className="mb-1.5 block text-sm font-medium text-stone-700">
+          <label htmlFor="name" className="mb-1.5 block text-xs font-bold uppercase tracking-[0.14em] text-charcoal-light">
             Name *
           </label>
           <input
@@ -45,12 +45,12 @@ export default function ContactForm() {
             name="name"
             type="text"
             required
-            className="w-full rounded-lg border border-stone-300 bg-white px-3.5 py-2.5 text-sm text-stone-900 outline-none focus:border-rose-400 focus:ring-2 focus:ring-rose-100"
+            className="w-full rounded-sm border border-black/12 bg-white px-3.5 py-2.5 text-sm text-charcoal outline-none focus:border-rose-gold focus:ring-2 focus:ring-champagne"
           />
         </div>
 
         <div className="sm:col-span-1">
-          <label htmlFor="email" className="mb-1.5 block text-sm font-medium text-stone-700">
+          <label htmlFor="email" className="mb-1.5 block text-xs font-bold uppercase tracking-[0.14em] text-charcoal-light">
             E-Mail *
           </label>
           <input
@@ -58,24 +58,24 @@ export default function ContactForm() {
             name="email"
             type="email"
             required
-            className="w-full rounded-lg border border-stone-300 bg-white px-3.5 py-2.5 text-sm text-stone-900 outline-none focus:border-rose-400 focus:ring-2 focus:ring-rose-100"
+            className="w-full rounded-sm border border-black/12 bg-white px-3.5 py-2.5 text-sm text-charcoal outline-none focus:border-rose-gold focus:ring-2 focus:ring-champagne"
           />
         </div>
 
         <div className="sm:col-span-1">
-          <label htmlFor="phone" className="mb-1.5 block text-sm font-medium text-stone-700">
+          <label htmlFor="phone" className="mb-1.5 block text-xs font-bold uppercase tracking-[0.14em] text-charcoal-light">
             Telefon
           </label>
           <input
             id="phone"
             name="phone"
             type="tel"
-            className="w-full rounded-lg border border-stone-300 bg-white px-3.5 py-2.5 text-sm text-stone-900 outline-none focus:border-rose-400 focus:ring-2 focus:ring-rose-100"
+            className="w-full rounded-sm border border-black/12 bg-white px-3.5 py-2.5 text-sm text-charcoal outline-none focus:border-rose-gold focus:ring-2 focus:ring-champagne"
           />
         </div>
 
         <div className="sm:col-span-1">
-          <label htmlFor="service" className="mb-1.5 block text-sm font-medium text-stone-700">
+          <label htmlFor="service" className="mb-1.5 block text-xs font-bold uppercase tracking-[0.14em] text-charcoal-light">
             Gewünschte Leistung
           </label>
           <input
@@ -83,12 +83,12 @@ export default function ContactForm() {
             name="service"
             type="text"
             placeholder="z. B. Gel-Modellage"
-            className="w-full rounded-lg border border-stone-300 bg-white px-3.5 py-2.5 text-sm text-stone-900 outline-none focus:border-rose-400 focus:ring-2 focus:ring-rose-100"
+            className="w-full rounded-sm border border-black/12 bg-white px-3.5 py-2.5 text-sm text-charcoal outline-none focus:border-rose-gold focus:ring-2 focus:ring-champagne"
           />
         </div>
 
         <div className="sm:col-span-2">
-          <label htmlFor="message" className="mb-1.5 block text-sm font-medium text-stone-700">
+          <label htmlFor="message" className="mb-1.5 block text-xs font-bold uppercase tracking-[0.14em] text-charcoal-light">
             Nachricht *
           </label>
           <textarea
@@ -97,22 +97,22 @@ export default function ContactForm() {
             required
             rows={4}
             placeholder="Dein Wunschtermin, Fragen zu Leistungen, ..."
-            className="w-full rounded-lg border border-stone-300 bg-white px-3.5 py-2.5 text-sm text-stone-900 outline-none focus:border-rose-400 focus:ring-2 focus:ring-rose-100"
+            className="w-full rounded-sm border border-black/12 bg-white px-3.5 py-2.5 text-sm text-charcoal outline-none focus:border-rose-gold focus:ring-2 focus:ring-champagne"
           />
         </div>
 
         <div className="sm:col-span-2">
           <button
             type="submit"
-            className="w-full rounded-full bg-rose-600 px-6 py-3 text-sm font-semibold text-white shadow-sm shadow-rose-600/20 transition-colors hover:bg-rose-700 sm:w-auto"
+            className="btn-primary w-full px-6 py-3 text-xs sm:w-auto"
           >
             Anfrage senden
           </button>
           {sent && (
-            <p className="mt-3 text-sm text-stone-600">
+            <p className="mt-3 text-sm text-charcoal-light">
               Dein E-Mail-Programm sollte sich gerade mit einer vorausgefüllten Nachricht
               geöffnet haben. Falls nicht, schreib uns gerne direkt an{" "}
-              <a href={`mailto:${siteConfig.email}`} className="font-medium text-rose-600">
+              <a href={`mailto:${siteConfig.email}`} className="font-medium text-rose-gold-dark">
                 {siteConfig.email}
               </a>
               .

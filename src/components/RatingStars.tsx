@@ -21,14 +21,14 @@ export default function RatingStars({
           <Star
             width={size}
             height={size}
-            className="absolute inset-0 text-rose-200"
+            className="absolute inset-0 text-champagne"
             fill="currentColor"
           />
           <span
             className="absolute inset-0 overflow-hidden"
             style={{ width: `${fill * 100}%` }}
           >
-            <Star width={size} height={size} className="text-rose-500" fill="currentColor" />
+            <Star width={size} height={size} className="text-rose-gold" fill="currentColor" />
           </span>
         </span>
       ))}

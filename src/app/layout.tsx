@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Poppins } from "next/font/google";
+import { Lato, Playfair_Display } from "next/font/google";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import MobileCTA from "@/components/MobileCTA";
 import { siteConfig } from "@/lib/site-data";
 import "./globals.css";
 
-const poppins = Poppins({
-  variable: "--font-poppins",
+const lato = Lato({
+  variable: "--font-lato",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["300", "400", "700", "900"],
 });
 
 const playfair = Playfair_Display({
@@ -46,8 +46,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="de" className={`${poppins.variable} ${playfair.variable} h-full`}>
-      <body className="flex min-h-full flex-col bg-cream-50 font-sans text-stone-800 antialiased">
+    <html lang="de" className={`${lato.variable} ${playfair.variable} h-full`}>
+      <body className="flex min-h-full flex-col bg-cream font-sans text-charcoal antialiased">
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-md focus:bg-white focus:px-4 focus:py-2 focus:shadow-lg"

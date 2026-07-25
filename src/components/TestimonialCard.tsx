@@ -4,13 +4,13 @@ import type { Testimonial } from "@/lib/site-data";
 
 export default function TestimonialCard({ quote, author }: Testimonial) {
   return (
-    <figure className="flex h-full flex-col rounded-2xl bg-white p-6 shadow-sm ring-1 ring-stone-900/5">
-      <Quote className="h-6 w-6 text-rose-300" strokeWidth={1.5} aria-hidden="true" />
+    <figure className="flex h-full flex-col rounded-sm bg-white p-6 ring-1 ring-rose-gold/18">
+      <Quote className="h-6 w-6 text-rose-gold/55" strokeWidth={1.5} aria-hidden="true" />
       <RatingStars value={5} size={14} />
-      <blockquote className="mt-3 flex-1 text-sm leading-relaxed text-stone-700">
+      <blockquote className="mt-4 flex-1 text-sm leading-relaxed text-charcoal-light">
         „{quote}“
       </blockquote>
-      <figcaption className="mt-4 text-sm font-semibold text-stone-900">
+      <figcaption className="mt-5 text-xs font-bold uppercase tracking-[0.16em] text-charcoal">
         {author}
       </figcaption>
     </figure>
