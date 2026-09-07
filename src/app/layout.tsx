@@ -20,20 +20,22 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: {
-    default: `${siteConfig.name} – Nagelstudio in ${siteConfig.city}`,
+    default: `${siteConfig.name} – Luxury Nails & Beauty`,
     template: `%s – ${siteConfig.name}`,
   },
   description: siteConfig.description,
   keywords: [
-    "Nagelstudio Beispielstadt",
-    "Maniküre Beispielstadt",
-    "Pediküre Beispielstadt",
-    "Gel Nägel Beispielstadt",
-    "Nailart Beispielstadt",
+    "Luxury Nagelstudio",
+    "Beauty Studio",
+    "Maniküre",
+    "Pediküre",
+    "Wimpern",
+    "Permanent Make-up",
+    "Kosmetik",
     siteConfig.name,
   ],
   openGraph: {
-    title: `${siteConfig.name} – Nagelstudio in ${siteConfig.city}`,
+    title: `${siteConfig.name} – Luxury Nails & Beauty`,
     description: siteConfig.description,
     locale: "de_DE",
     type: "website",
@@ -47,7 +49,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de" className={`${lato.variable} ${playfair.variable} h-full`}>
-      <body className="flex min-h-full flex-col bg-cream font-sans text-charcoal antialiased">
+      <body className="flex min-h-full flex-col bg-white font-sans text-charcoal antialiased">
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-md focus:bg-white focus:px-4 focus:py-2 focus:shadow-lg"

@@ -15,7 +15,7 @@ export default function PhotoTile({
 }) {
   return (
     <div
-      className={`group relative aspect-square overflow-hidden rounded-sm bg-charcoal ring-1 ring-rose-gold/18 ${className}`}
+      className={`group relative aspect-square overflow-hidden rounded-sm bg-champagne ring-1 ring-rose-gold/18 ${className}`}
     >
       <Image
         src={src}
@@ -26,7 +26,7 @@ export default function PhotoTile({
         className="object-cover transition-transform duration-700 group-hover:scale-105"
       />
       {label && (
-        <span className="absolute inset-x-0 bottom-0 bg-linear-to-t from-charcoal/78 via-charcoal/20 to-transparent px-4 pb-4 pt-10 text-xs font-bold uppercase tracking-[0.16em] text-white">
+        <span className="absolute inset-x-0 bottom-0 bg-linear-to-t from-[#3b281b]/62 via-[#6f472f]/18 to-transparent px-4 pb-4 pt-10 text-xs font-bold uppercase tracking-[0.16em] text-white">
           {label}
         </span>
       )}

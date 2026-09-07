@@ -12,7 +12,7 @@ export default function ImpressumPage() {
     <>
       <PageHero kicker="Rechtliches" title="Impressum" />
 
-      <section className="bg-cream py-16 sm:py-20">
+      <section className="bg-white py-16 sm:py-20">
         <Container className="mx-auto max-w-3xl">
           <div className="space-y-10 rounded-sm bg-white p-6 text-sm leading-relaxed text-charcoal-light ring-1 ring-rose-gold/18 sm:p-10">
             <div>

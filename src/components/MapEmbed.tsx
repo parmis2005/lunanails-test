@@ -22,13 +22,13 @@ export default function MapEmbed({ className = "" }: { className?: string }) {
           referrerPolicy="no-referrer-when-downgrade"
         />
       ) : (
-        <div className="flex h-full min-h-[420px] flex-col items-center justify-center gap-4 bg-champagne/55 p-8 text-center">
+        <div className="flex h-full min-h-[420px] flex-col items-center justify-center gap-4 bg-cream p-8 text-center text-white">
           <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white text-rose-gold-dark shadow-sm">
             <MapPin className="h-6 w-6" />
           </div>
           <div>
-            <p className="font-medium text-charcoal">{fullAddress}</p>
-            <p className="mx-auto mt-2 max-w-sm text-xs leading-relaxed text-charcoal-light">
+            <p className="font-medium text-white">{fullAddress}</p>
+            <p className="mx-auto mt-2 max-w-sm text-xs leading-relaxed text-white/76">
               Beim Laden der Karte wird eine Verbindung zu Google-Servern hergestellt und
               es können Daten an Google übertragen werden. Es gelten die
               Datenschutzbestimmungen von Google.

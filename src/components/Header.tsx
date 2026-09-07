@@ -19,14 +19,14 @@ export default function Header() {
   }, [open]);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-black/5 bg-white/95 shadow-sm backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-rose-gold/15 bg-white/95 shadow-sm backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:h-20 lg:px-8">
         <Link href="/" className="flex flex-col leading-tight">
           <span className="font-serif text-xl font-semibold tracking-wide text-charcoal lg:text-2xl">
             {siteConfig.shortName}
           </span>
           <span className="mt-0.5 text-[11px] font-bold uppercase tracking-[0.25em] text-rose-gold">
-            {siteConfig.city}
+            Nails & Beauty
           </span>
         </Link>
 
@@ -57,10 +57,10 @@ export default function Header() {
             {siteConfig.phone.display}
           </a>
           <Link
-            href="/kontakt"
+            href="/#buchung"
             className="btn-primary px-5 py-2.5 text-xs"
           >
-            Termin anfragen
+            Termin buchen
           </Link>
         </div>
 
@@ -77,7 +77,7 @@ export default function Header() {
       </div>
 
       {open && (
-        <div id="mobile-menu" className="border-t border-black/5 bg-white shadow-xl lg:hidden">
+        <div id="mobile-menu" className="border-t border-rose-gold/15 bg-white shadow-xl lg:hidden">
           <nav className="flex flex-col px-4 py-2">
             {navLinks.map((link) => {
               const active =
@@ -87,7 +87,7 @@ export default function Header() {
                   key={link.href}
                   href={link.href}
                   onClick={closeMenu}
-                  className={`border-b border-black/5 py-3 text-xs font-bold uppercase tracking-[0.16em] last:border-none ${
+                  className={`border-b border-rose-gold/12 py-3 text-xs font-bold uppercase tracking-[0.16em] last:border-none ${
                     active ? "text-rose-gold-dark" : "text-charcoal-light"
                   }`}
                 >
@@ -104,11 +104,11 @@ export default function Header() {
               {siteConfig.phone.display}
             </a>
             <Link
-              href="/kontakt"
+              href="/#buchung"
               onClick={closeMenu}
               className="btn-primary mb-4 mt-2 px-5 py-3 text-center text-xs"
             >
-              Termin anfragen
+              Termin buchen
             </Link>
           </nav>
         </div>

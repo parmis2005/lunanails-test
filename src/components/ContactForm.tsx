@@ -45,7 +45,7 @@ export default function ContactForm() {
             name="name"
             type="text"
             required
-            className="w-full rounded-sm border border-black/12 bg-white px-3.5 py-2.5 text-sm text-charcoal outline-none focus:border-rose-gold focus:ring-2 focus:ring-champagne"
+            className="w-full rounded-sm border border-rose-gold/22 bg-white px-3.5 py-2.5 text-sm text-charcoal outline-none focus:border-rose-gold focus:ring-2 focus:ring-champagne"
           />
         </div>
 
@@ -58,7 +58,7 @@ export default function ContactForm() {
             name="email"
             type="email"
             required
-            className="w-full rounded-sm border border-black/12 bg-white px-3.5 py-2.5 text-sm text-charcoal outline-none focus:border-rose-gold focus:ring-2 focus:ring-champagne"
+            className="w-full rounded-sm border border-rose-gold/22 bg-white px-3.5 py-2.5 text-sm text-charcoal outline-none focus:border-rose-gold focus:ring-2 focus:ring-champagne"
           />
         </div>
 
@@ -70,7 +70,7 @@ export default function ContactForm() {
             id="phone"
             name="phone"
             type="tel"
-            className="w-full rounded-sm border border-black/12 bg-white px-3.5 py-2.5 text-sm text-charcoal outline-none focus:border-rose-gold focus:ring-2 focus:ring-champagne"
+            className="w-full rounded-sm border border-rose-gold/22 bg-white px-3.5 py-2.5 text-sm text-charcoal outline-none focus:border-rose-gold focus:ring-2 focus:ring-champagne"
           />
         </div>
 
@@ -83,7 +83,7 @@ export default function ContactForm() {
             name="service"
             type="text"
             placeholder="z. B. Gel-Modellage"
-            className="w-full rounded-sm border border-black/12 bg-white px-3.5 py-2.5 text-sm text-charcoal outline-none focus:border-rose-gold focus:ring-2 focus:ring-champagne"
+            className="w-full rounded-sm border border-rose-gold/22 bg-white px-3.5 py-2.5 text-sm text-charcoal outline-none focus:border-rose-gold focus:ring-2 focus:ring-champagne"
           />
         </div>
 
@@ -97,7 +97,7 @@ export default function ContactForm() {
             required
             rows={4}
             placeholder="Dein Wunschtermin, Fragen zu Leistungen, ..."
-            className="w-full rounded-sm border border-black/12 bg-white px-3.5 py-2.5 text-sm text-charcoal outline-none focus:border-rose-gold focus:ring-2 focus:ring-champagne"
+            className="w-full rounded-sm border border-rose-gold/22 bg-white px-3.5 py-2.5 text-sm text-charcoal outline-none focus:border-rose-gold focus:ring-2 focus:ring-champagne"
           />
         </div>
 

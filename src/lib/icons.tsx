@@ -1,5 +1,7 @@
 import {
   Calendar,
+  Brush,
+  Eye,
   Footprints,
   Gem,
   Hand,
@@ -12,6 +14,8 @@ import {
 
 export const iconMap: Record<string, LucideIcon> = {
   calendar: Calendar,
+  brush: Brush,
+  eye: Eye,
   "map-pin": MapPin,
   "shield-check": ShieldCheck,
   heart: Heart,

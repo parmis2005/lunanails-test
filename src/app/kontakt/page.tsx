@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Clock, Mail, MapPin, Navigation, Phone } from "lucide-react";
+import BookingWidget from "@/components/BookingWidget";
 import Container from "@/components/Container";
 import ContactForm from "@/components/ContactForm";
 import MapEmbed from "@/components/MapEmbed";
@@ -13,7 +14,7 @@ import {
 export const metadata: Metadata = {
   title: "Kontakt",
   description:
-    "Fiktive Adresse, Öffnungszeiten und Kontaktmöglichkeiten von Luna Nails Atelier.",
+    "Fiktive Adresse, Öffnungszeiten, Terminbuchung und Kontaktmöglichkeiten von Luna Beauty Atelier.",
 };
 
 export default function KontaktPage() {
@@ -22,32 +23,38 @@ export default function KontaktPage() {
       <PageHero
         kicker="Kontakt"
         title="So erreichst du uns"
-        subtitle="Ruf uns an, schreib uns eine Nachricht oder komm direkt vorbei."
+        subtitle="Buche eine Demo-Behandlung, ruf uns an oder schreib uns eine Nachricht."
       />
 
-      <section className="bg-cream py-16 sm:py-20">
+      <section id="termin" className="bg-white py-16 sm:py-20">
+        <Container>
+          <BookingWidget />
+        </Container>
+      </section>
+
+      <section className="border-t border-rose-gold/15 bg-white py-16 sm:py-20">
         <Container className="grid gap-10 lg:grid-cols-2">
           <div className="flex flex-col gap-6">
-            <div className="rounded-sm bg-white p-6 ring-1 ring-rose-gold/18 sm:p-8">
-              <h2 className="font-serif text-2xl font-semibold text-charcoal">
+            <div className="rounded-sm bg-cream p-6 text-white ring-1 ring-rose-gold/18 sm:p-8">
+              <h2 className="font-serif text-2xl font-semibold text-white">
                 Kontaktdaten
               </h2>
               <ul className="mt-5 space-y-4 text-sm">
                 <li className="flex items-start gap-3">
-                  <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-rose-gold" />
-                  <span className="text-charcoal-light">{fullAddress}</span>
+                  <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-white" />
+                  <span className="text-white/76">{fullAddress}</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <Phone className="h-5 w-5 shrink-0 text-rose-gold" />
-                  <a href={siteConfig.phone.href} className="text-charcoal-light hover:text-rose-gold-dark">
+                  <Phone className="h-5 w-5 shrink-0 text-white" />
+                  <a href={siteConfig.phone.href} className="text-white/76 hover:text-white">
                     {siteConfig.phone.display}
                   </a>
                 </li>
                 <li className="flex items-center gap-3">
-                  <Mail className="h-5 w-5 shrink-0 text-rose-gold" />
+                  <Mail className="h-5 w-5 shrink-0 text-white" />
                   <a
                     href={`mailto:${siteConfig.email}`}
-                    className="text-charcoal-light hover:text-rose-gold-dark"
+                    className="text-white/76 hover:text-white"
                   >
                     {siteConfig.email}
                   </a>
@@ -65,20 +72,20 @@ export default function KontaktPage() {
               </a>
             </div>
 
-            <div className="rounded-sm bg-white p-6 ring-1 ring-rose-gold/18 sm:p-8">
-              <h2 className="flex items-center gap-2 font-serif text-2xl font-semibold text-charcoal">
-                <Clock className="h-5 w-5 text-rose-gold" />
+            <div className="rounded-sm bg-cream p-6 text-white ring-1 ring-rose-gold/18 sm:p-8">
+              <h2 className="flex items-center gap-2 font-serif text-2xl font-semibold text-white">
+                <Clock className="h-5 w-5 text-white" />
                 Öffnungszeiten
               </h2>
-              <dl className="mt-5 divide-y divide-black/8 text-sm">
+              <dl className="mt-5 divide-y divide-white/18 text-sm">
                 {siteConfig.hours.map((h) => (
                   <div key={h.day} className="flex items-center justify-between py-2">
-                    <dt className="text-charcoal-light">{h.day}</dt>
+                    <dt className="text-white/76">{h.day}</dt>
                     <dd
                       className={
                         "closed" in h && h.closed
-                          ? "font-medium text-charcoal-light/60"
-                          : "font-bold text-charcoal"
+                          ? "font-medium text-white/50"
+                          : "font-bold text-white"
                       }
                     >
                       {h.time}
@@ -88,10 +95,10 @@ export default function KontaktPage() {
               </dl>
             </div>
 
-            <div className="rounded-sm bg-white p-6 ring-1 ring-rose-gold/18 sm:p-8">
-              <h2 className="font-serif text-2xl font-semibold text-charcoal">Anfahrt</h2>
-              <p className="mt-3 text-sm leading-relaxed text-charcoal-light">
-                Wir befinden uns in der {siteConfig.address.street} in {siteConfig.city} – sowohl mit dem
+            <div className="rounded-sm bg-cream p-6 text-white ring-1 ring-rose-gold/18 sm:p-8">
+              <h2 className="font-serif text-2xl font-semibold text-white">Anfahrt</h2>
+              <p className="mt-3 text-sm leading-relaxed text-white/76">
+                Wir befinden uns in der {siteConfig.address.street} – sowohl mit dem
                 Auto als auch mit öffentlichen Verkehrsmitteln gut zu erreichen. Nutze
                 den Routenplaner-Button für die schnellste Verbindung von deinem
                 Standort aus.
@@ -103,7 +110,7 @@ export default function KontaktPage() {
         </Container>
       </section>
 
-      <section className="border-t border-black/5 bg-white py-16 sm:py-20">
+      <section className="border-t border-rose-gold/15 bg-white py-16 sm:py-20">
         <Container className="mx-auto max-w-2xl">
           <h2 className="text-center font-serif text-4xl font-light text-charcoal sm:text-5xl">
             Terminanfrage
